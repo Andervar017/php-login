@@ -17,7 +17,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My College</title>
+    <title>My College</title><br>
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -25,16 +25,17 @@
     <?php require 'partials/header.php' ?>
 
     <?php if(!empty($user)): ?>
-      <br> Welcome. <?= $user['email']; ?>
+      <br> Hola <?= $user['email']; ?>
       <br>Haz ingresado exitosamente
-      <a href="logout.php">
-        Salir
-      </a>
+      <hr>
+      <h2><a href="logout.php">Salir</a> o
+      <a href="/Juegocollege/juego.php">Entrar al juego
+      </a></h2>
     <?php else: ?>
       <h1>Registro e ingreso</h1>
 
-      <a href="login.php">Registrar</a> o
-      <a href="signup.php">Ingresar</a>
+      <h2><a href="login.php">Ingresar</a> o
+      <a href="signup.php">Registrar</a><h2>
     <?php endif; ?>
   </body>
 </html>

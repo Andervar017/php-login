@@ -1,4 +1,3 @@
 <header>
-  <h1><a href="/php-login">My College</a></h1>
-  by AndersonV
+  <a href="/php-login"><img src="fondoanderson.jpg" height="200" width="600"></a>
 </header>

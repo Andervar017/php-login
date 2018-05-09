@@ -8,9 +8,9 @@
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $stmt->bindParam(':password', $password);
     if ($stmt->execute()) {
-      $message = 'Successfully created new user';
+      $message = '|     Cuenta creada satisfactoriamente     |';
     } else {
-      $message = 'Sorry there must have been an issue creating your account';
+      $message = '|     Ya se ha creado una cuenta con este email     |';
     }
   }
 ?>
@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <title>Registrate</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -30,8 +30,8 @@
       <p> <?= $message ?></p>
     <?php endif; ?>
 
-    <h1>Registrate</h1>
-    <span>o <a href="login.php">Inicia sesion</a></span>
+    <h1>Registrar</h1>
+    <span><a href="login.php">Iniciar sesion</a></span>
 
     <form action="signup.php" method="POST">
       <input name="email" type="text" placeholder="Ingresa el email">

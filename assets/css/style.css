@@ -1,7 +1,7 @@
 /* General */
 body {
-  background-color: skyblue;
-  margin: 0;
+  background-color: #33BDFF;
+  margin: 2;
   padding: 0;
   font-family: 'Berkshire Swash', cursive;
   text-align: center;
@@ -33,7 +33,6 @@ input[type="submit"]:hover {
   background-color: #00b8eb;
 }
 
-/* Header */
 header {
   border-bottom: 2px solid #eee;
   padding: 20px 0;
@@ -43,5 +42,4 @@ header {
 }
 header a {
   text-decoration: none;
-  color: #05BC9B;
 }
